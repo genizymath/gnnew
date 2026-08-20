@@ -1240,7 +1240,7 @@ function openZone(file) {
             authorEl.textContent = "by " + file.author;
             if (file.authorLink) authorEl.href = file.authorLink;
             else authorEl.removeAttribute('href');
-            zoneViewer.style.display = "block";
+            zoneViewer.style.display = "flex";
             try {
                 const url = new URL(window.location);
                 url.searchParams.set('id', file.id);
